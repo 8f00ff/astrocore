@@ -1,0 +1,35 @@
+# Rust/Cargo
+/target/
+Cargo.lock
+**/*.rs.bk
+
+# Bevy
+.bevy/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# IDE
+.idea/
+*.iml

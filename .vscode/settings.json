@@ -1,0 +1,27 @@
+{
+  "rust-analyzer.cargo.extraArgs": [
+    "--target-dir",
+    "${workspaceFolder}/target/vscode"
+  ],
+  "rust-analyzer.cargo.extraEnv": {
+    "CARGO_TARGET_DIR": "${workspaceFolder}/target/vscode"
+  },
+  "rust-analyzer.cargo.targetDir": "${workspaceFolder}/target/vscode",
+  "rust-analyzer.check.extraArgs": [
+    "--target-dir",
+    "${workspaceFolder}/target/vscode"
+  ],
+  "rust-analyzer.check.extraEnv": {
+    "CARGO_TARGET_DIR": "${workspaceFolder}/target/vscode"
+  },
+  "rust-analyzer.runnables.extraArgs": [
+    "--target-dir",
+    "${workspaceFolder}/target/vscode"
+  ],
+  "rust-analyzer.runnables.extraEnv": {
+    "CARGO_TARGET_DIR": "${workspaceFolder}/target/vscode"
+  },
+  "rust-analyzer.server.extraEnv": {
+    "CARGO_TARGET_DIR": "${workspaceFolder}/target/vscode"
+  }
+}

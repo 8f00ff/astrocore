@@ -1,0 +1,76 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug executable 'astrocore'",
+      "cargo": {
+        "args": [
+          "build",
+          "--bin=astrocore",
+          "--package=astrocore",
+          "--target-dir=${workspaceFolder}/target/vscode"
+        ],
+        "filter": {
+          "name": "astrocore",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "env": {
+          "CARGO_MANIFEST_DIR": "${workspaceFolder}",
+          "CARGO_TARGET_DIR": "${workspaceFolder}/target/vscode"
+      }
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests in executable 'astrocore'",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--bin=astrocore",
+          "--package=astrocore",
+          "--target-dir=${workspaceFolder}/target/vscode"
+        ],
+        "filter": {
+          "name": "astrocore",
+          "kind": "bin"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "env": {
+          "CARGO_MANIFEST_DIR": "${workspaceFolder}",
+          "CARGO_TARGET_DIR": "${workspaceFolder}/target/vscode"
+      }
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug unit tests",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--test=astrocore",
+          "--package=astrocore",
+          "--target-dir=${workspaceFolder}/target/vscode"
+        ],
+        "filter": {
+          "name": "astrocore",
+          "kind": "test"
+        }
+      },
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "env": {
+          "CARGO_MANIFEST_DIR": "${workspaceFolder}",
+          "CARGO_TARGET_DIR": "${workspaceFolder}/target/vscode"
+      }
+    }
+  ]
+}

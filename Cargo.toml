@@ -1,0 +1,30 @@
+[dependencies]
+bevy = { version = "0.15.3", default-features = false, features = [
+  "bevy_state",
+  "multi_threaded",
+] }
+
+[lib]
+name = "astrocore"
+path = "src/lib.rs"
+
+[package]
+name = "astrocore"
+version = "0.1.0-dev"
+edition = "2024"
+repository = "https://github.com/8f00ff/astrocore"
+
+[[test]]
+name = "astrocore"
+path = "tests/main.rs"
+
+[package.metadata.bundle]
+identifier = "dev.8f00ff.astrocore"
+copyright = "© 8f00ff (Vi) 2025"
+category = "Game"
+osx_minimum_system_version = "11"
+resources = [
+  "assets/**/*", 
+  "!assets/**/.gitkeep",
+  "!assets/**/.DS_Store"
+]
